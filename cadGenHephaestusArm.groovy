@@ -893,7 +893,7 @@ return new ICadGenerator(){
 						.difference(boltHolePattern)
 
 		
-		allCad.add(cameraBlock)
+		//allCad.add(cameraBlock)
 
 		// Cyl for radius
 		def cornerCyl = new Cylinder(cornerRadius,cornerRadius,boardThickness,80).toCSG();
@@ -964,7 +964,7 @@ return new ICadGenerator(){
 		b.setMassKg(totalMass)
 		b.setCenterOfMassFromCentroid(centerOfMassFromCentroid)
 		
-		allCad.addAll(vitamins)
+		//allCad.addAll(vitamins)
 		return allCad;
 	}
 };
