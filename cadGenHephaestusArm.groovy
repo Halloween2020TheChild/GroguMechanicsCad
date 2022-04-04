@@ -4,7 +4,6 @@ import com.neuronrobotics.bowlerstudio.creature.ICadGenerator;
 import com.neuronrobotics.bowlerstudio.physics.TransformFactory
 import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
 import org.apache.commons.io.IOUtils;
-import org.apache.http.client.params.AllClientPNames
 import org.eclipse.jetty.server.handler.MovedContextHandler
 
 import com.neuronrobotics.bowlerstudio.vitamins.*;
