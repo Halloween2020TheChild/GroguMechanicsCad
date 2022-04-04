@@ -4,3 +4,10 @@
 /cache/
 /*.class
 /gripper.stl
+
+/.settings
+/.project
+/.classpath
+/.cproject
+/cache/
+/*.class

@@ -3,8 +3,6 @@ import com.neuronrobotics.sdk.common.BowlerAbstractDevice
 import com.neuronrobotics.bowlerstudio.creature.ICadGenerator;
 import com.neuronrobotics.bowlerstudio.physics.TransformFactory
 import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
-import com.neuronrobotics.bowlerstudio.BowlerStudio
-import com.neuronrobotics.bowlerstudio.creature.CreatureLab;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.client.params.AllClientPNames
 import org.eclipse.jetty.server.handler.MovedContextHandler
