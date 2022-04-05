@@ -80,7 +80,7 @@ for(def i=0;i<360;i+=90) {
 
 
 CSG baseCore = new Cylinder(baseCorRad,baseCorRad,plateThickness,36).toCSG()
-				.union(new Cylinder(baseCorRad,baseCorRad,plateThickness,36).toCSG().movex(baseCorRad*2))
+				.union(new Cylinder(baseCorRad,baseCorRad,plateThickness,36).toCSG().movey(baseCorRad*2))
 				.hull()
 				.movez(mountPlateToHornTop)
 				.difference(thrust)
