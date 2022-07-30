@@ -429,9 +429,12 @@ return new ICadGenerator(){
 			def springPathDrive = moveDHValues(springPath.toZMax().movez(offsetSprings),dh)
 			def springPathPassive = moveDHValues(springPath.toZMin().movez(-springSupportLength/2-0.5),dh)
 			//end Spring path section				
-								
-			CSG MotorMountBracket = actuatorCircle.movez(-offsetOfLinks)
+			CSG tipOfMotorMount = actuatorCircle.movez(-offsetOfLinks)					
+			CSG MotorMountBracket = tipOfMotorMount
 							.union(motorLink)
+							.union(motorLink.movey(15).movex(-10))
+							.union(tipOfMotorMount.movey(10).movex(-2))
+							.union(tipOfMotorMount.movex(-8))
 							.hull()
 							.union(springPathDrive)
 							.difference(vitamins)
