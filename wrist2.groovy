@@ -188,12 +188,13 @@ passiveSide=passiveSide.union(passiveUnit)
 passiveSide.setManipulator(manipulator)
 //End Passive Side
 
+double servoSupport =8
 //Servo mount
-def supportBeam= new RoundedCube(baseCorRad*2.0-cornerRad,motormeasurments.body_y+linkThickness*2,25)
+def supportBeam= new RoundedCube(baseCorRad*2.0-cornerRad,motormeasurments.body_y+linkThickness*2+servoSupport,25)
 					.cornerRadius(cornerRad).toCSG()
 					.toZMax()
 					.toYMin()
-					.movey(-baseCorRad)
+					.movey(-baseCorRad-servoSupport)
 					.movex(cornerRad/2)
 					.transformed(TransformFactory.nrToCSG(motorLocation))
 //END Servo Mount
