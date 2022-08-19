@@ -371,7 +371,7 @@
 <name>mouth</name>
 	<cadEngine>
 		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
-		<file>cadGenHephaestusArm.groovy</file>
+		<file>mouthcad.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
