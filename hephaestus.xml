@@ -357,12 +357,12 @@
 
 		<mobilebase>
 	<cadEngine>
-		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
+		<file>cadGenHephaestusArm.groovy</file>
 	</cadEngine>
 	<driveEngine>
-		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
-		<file>WalkingDriveEngine.groovy</file>
+		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
+		<file>walking.groovy</file>
 	</driveEngine>
 
 <name>head</name>
@@ -370,28 +370,28 @@
 
 <name>mouth</name>
 	<cadEngine>
-		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
+		<file>cadGenHephaestusArm.groovy</file>
 	</cadEngine>
 	<kinematics>
-		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
+		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
 		<file>DefaultDhSolver.groovy</file>
 	</kinematics>
 <link>
-	<name>basePan</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>0</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.43283582089552</staticOffset>
-	<deviceTheoreticalMax>255.0</deviceTheoreticalMax>
-	<deviceTheoreticalMin>0.0</deviceTheoreticalMin>
-	<isLatch>true</isLatch>
-	<indexLatch>235.0</indexLatch>
+	<name>tool</name>
+	<deviceName>GroguArm</deviceName>
+	<type>udp-7dof-float</type>
+	<index>6</index>
+	<scale>1.0</scale>
+	<upperLimit>110.0</upperLimit>
+	<lowerLimit>-110.0</lowerLimit>
+	<upperVelocity>333.0</upperVelocity>
+	<lowerVelocity>-333.0</lowerVelocity>
+	<staticOffset>0.0</staticOffset>
+	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
+	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
+	<isLatch>false</isLatch>
+	<indexLatch>0.0</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
 
@@ -409,14 +409,14 @@
 
 	</vitamins>
 	<passive>false</passive>
-	<mass>0.01</mass>
+	<mass>0.0</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz></centerOfMassFromCentroid>
 	<imuFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -426,13 +426,14 @@
 	<rotz>-0.0</rotz></imuFromCentroid>
 
 	<DHParameters>
-		<Delta>0.0</Delta>
+		<Delta>9.0</Delta>
 		<Theta>0.0</Theta>
-		<Radius>60.0</Radius>
-		<Alpha>-90.0</Alpha>
+		<Radius>0.0</Radius>
+		<Alpha>0.0</Alpha>
 	</DHParameters>
 
 </link>
+
 
 <ZframeToRAS
 >	<x>0.0</x>
@@ -497,62 +498,6 @@
 
 </mobilebase>
 
-	</DHParameters>
-
-</link>
-<link>
-	<name>tool</name>
-	<deviceName>GroguArm</deviceName>
-	<type>udp-7dof-float</type>
-	<index>6</index>
-	<scale>1.0</scale>
-	<upperLimit>110.0</upperLimit>
-	<lowerLimit>-110.0</lowerLimit>
-	<upperVelocity>333.0</upperVelocity>
-	<lowerVelocity>-333.0</lowerVelocity>
-	<staticOffset>0.0</staticOffset>
-	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
-	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
-	<isLatch>false</isLatch>
-	<indexLatch>0.0</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-
-	<vitamins>
-		<vitamin>
-			<name>electroMechanical</name>
-			<type>hobbyServo</type>
-			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>9.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>0.0</Radius>
-		<Alpha>0.0</Alpha>
 	</DHParameters>
 
 </link>
