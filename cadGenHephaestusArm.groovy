@@ -297,7 +297,7 @@ return new ICadGenerator(){
 				"tool.groovy" , // file to load
 				// Parameters passed to the funcetion
 				[d, linkIndex,centerTheMotorsValue,motorLocation]
-				))
+				).collect{ it.movez(9)})
 		}
 		if(linkIndex==6) {
 
