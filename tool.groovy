@@ -35,11 +35,12 @@ if(args==null) {
 		return m
 	})
 	def motorLocation = new TransformNR(0,0,centerTheMotorsValue,new RotationNR())
-	args = [base.getAllDHChains().get(0),6,centerTheMotorsValue,motorLocation]
+	args = [base.getAllDHChains().get(0),5,centerTheMotorsValue,motorLocation]
 }
 TransformNR motorLocation=args[3]
 int linkIndex = args[1]
 DHParameterKinematics d= args[0];
+double zoffset=9;
 ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 DHLink dh = dhLinks.get(linkIndex)
 // Hardware to engineering units configuration
@@ -68,7 +69,7 @@ double baseCorRad = thrustMeasurments.outerDiameter/2+5
 //Mount holes
 CSG mount = Vitamins.get("capScrew", "M5")
 			.toZMax()
-			.movez(baseCoreheight+plateThickness+mountPlateToHornTop)
+			.movez(baseCoreheight+plateThickness+mountPlateToHornTop+zoffset)
 			.movex(25.0)
 def mounts =[]
 for(def i=0;i<360;i+=90) {
@@ -82,10 +83,11 @@ for(def i=0;i<360;i+=90) {
 CSG baseCore = new Cylinder(baseCorRad,baseCorRad,plateThickness,36).toCSG()
 				.union(new Cylinder(baseCorRad,baseCorRad,plateThickness,36).toCSG().movey(baseCorRad*2))
 				.hull()
-				.movez(mountPlateToHornTop)
+				.movez(mountPlateToHornTop+zoffset)
 				.difference(thrust)
 				.difference(vitaminCad)
 				.difference(mounts)
+				
 baseCore.setManipulator(manipulator)
 //END link
 
