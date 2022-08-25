@@ -29,7 +29,7 @@
 	<scale>1.0</scale>
 	<upperLimit>90.0</upperLimit>
 	<lowerLimit>-90.0</lowerLimit>
-	<upperVelocity>300.0</upperVelocity>
+	<upperVelocity>400</upperVelocity>
 	<lowerVelocity>-300.0</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
@@ -85,7 +85,7 @@
 	<scale>1.0</scale>
 	<upperLimit>90.0</upperLimit>
 	<lowerLimit>-90.0</lowerLimit>
-	<upperVelocity>300.0</upperVelocity>
+	<upperVelocity>400</upperVelocity>
 	<lowerVelocity>-300.0</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
@@ -141,7 +141,7 @@
 	<scale>1.0</scale>
 	<upperLimit>90.0</upperLimit>
 	<lowerLimit>-90.0</lowerLimit>
-	<upperVelocity>300.0</upperVelocity>
+	<upperVelocity>400</upperVelocity>
 	<lowerVelocity>-300.0</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
@@ -197,8 +197,8 @@
 	<scale>1.0</scale>
 	<upperLimit>110.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
-	<upperVelocity>333.0</upperVelocity>
-	<lowerVelocity>-333.0</lowerVelocity>
+	<upperVelocity>400</upperVelocity>
+	<lowerVelocity>-400</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
 	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
@@ -253,8 +253,8 @@
 	<scale>1.0</scale>
 	<upperLimit>150.0</upperLimit>
 	<lowerLimit>-55.0</lowerLimit>
-	<upperVelocity>333.0</upperVelocity>
-	<lowerVelocity>-333.0</lowerVelocity>
+	<upperVelocity>400</upperVelocity>
+	<lowerVelocity>-400</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
 	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
@@ -309,8 +309,8 @@
 	<scale>1.0</scale>
 	<upperLimit>110.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
-	<upperVelocity>333.0</upperVelocity>
-	<lowerVelocity>-333.0</lowerVelocity>
+	<upperVelocity>400</upperVelocity>
+	<lowerVelocity>-400</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
 	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
@@ -385,8 +385,8 @@
 	<scale>1.0</scale>
 	<upperLimit>110.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
-	<upperVelocity>333.0</upperVelocity>
-	<lowerVelocity>-333.0</lowerVelocity>
+	<upperVelocity>400</upperVelocity>
+	<lowerVelocity>-400</lowerVelocity>
 	<staticOffset>0.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
 	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
