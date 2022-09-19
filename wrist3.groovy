@@ -56,7 +56,7 @@ vitaminCad.setManipulator(manipulator)
 
 
 def mountPlateToHornTop = Vitamins.getConfiguration(type,size).get("mountPlateToHornTop")
-def baseCoreheight = vitaminCad.getTotalZ()-mountPlateToHornTop
+def baseCoreheight = 20-mountPlateToHornTop
 def bearingHeight =mountPlateToHornTop-2
 CSG thrust = Vitamins.get("ballBearing","Thrust_1andAHalfinch")
 						.movez(bearingHeight)

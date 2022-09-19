@@ -59,6 +59,8 @@ CSG moveDHValues(CSG incoming,DHLink dh ){
 
 return new ICadGenerator(){
 
+		static final double rotationOfBaseMotor = -135
+
     int bracketOneKeepawayDistance = 50
 
 	double motorGearPlateThickness = 10
@@ -243,7 +245,7 @@ return new ICadGenerator(){
 			//println "Adding Motor "+vitaminType
 			
 			if(linkIndex==0)
-				motorLocation=motorLocation.times(new TransformNR(0,0,0,new RotationNR(0,180,0)))
+				motorLocation=motorLocation.times(new TransformNR(0,0,0,new RotationNR(0,rotationOfBaseMotor,0)))
 			if(linkIndex==1)
 					motorLocation=motorLocation.times(new TransformNR(0,0,0,new RotationNR(0,-90,0)))
 			if(linkIndex==2)
@@ -465,19 +467,34 @@ return new ICadGenerator(){
 
 		if(linkIndex==0) {
 			def z = dh.getD()-linkYDimention/2-movingPartClearence
-			CSG hornKeepawy = moveDHValues(new Cylinder(hornDiameter/2,dh.getD()+1).toCSG()
-					.movez(6),dh)
 			
+			HashMap<String, Object>  measurments = Vitamins.getConfiguration( conf.getShaftType(),conf.getShaftSize())
+			CSG hornKeepawy = moveDHValues(new Cylinder(hornDiameter/2,dh.getD()+1).toCSG()
+					.movez(measurments.caseScrewKeepawayLength),dh)
+			
+			def keepawayBeam = new RoundedCube(springSupportLength*4,measurments.hornDiameter+5,10)
+								.cornerRadius(cornerRad)
+								.toCSG()
+								.toZMin()
+								.movez(measurments.caseScrewKeepawayLength)
+								.transformed( TransformFactory.nrToCSG(locationOfBearing))
 			def supportBeam= new RoundedCube(linkYDimention+linkThickness*2.0,40+linkThickness*2,z)
 								.cornerRadius(cornerRad)
 								.toCSG()
 								
 								.toZMax()
+			def motorSupport= new RoundedCube(linkYDimention+linkThickness*2.0,40+linkThickness*2,z)
+								.cornerRadius(cornerRad)
+								.toCSG()
+								.movex(-27)
+								.toZMax()
+								.movez(15)
 			def springSupport= new RoundedCube(springSupportLength,linkOneSupportWidth,z)
 								.cornerRadius(cornerRad)
 								.toCSG()
 								.movex(-30)
 								.toZMax()
+								.union(motorSupport)
 			def	baseOfArm = Parabola.coneByHeight(baseCorRad, 25)
 						.rotx(90)
 						.toZMin()
@@ -491,13 +508,14 @@ return new ICadGenerator(){
 							)
 						.union(supportBeam.union(springSupport).movez(z+movingPartClearence))
 						.transformed( TransformFactory.nrToCSG(locationOfBearing))
+						.difference(keepawayBeam)
 						.difference(vitamins)
 						.difference(hornKeepawy)
 			baseOfArm.setColor(javafx.scene.paint.Color.WHITE)
 			baseOfArm.setManipulator(manipulator)
 			baseOfArm.setName("BaseCone")
 			baseOfArm.setManufacturing ({ mfg ->
-				return mfg.rotx(-90).toZMin()				
+				return mfg.rotx(90).toZMin()				
 			})
 			allCad.add(baseOfArm)
 		}
@@ -831,6 +849,9 @@ return new ICadGenerator(){
 					new Vector3d(0, 3, 0)
 		]
 		CSG pointer = HullUtil.hull(points)
+		CSG ventCone = Parabola.coneByHeight(15, 35)
+						.rotx(90)
+						.toZMin()
 		
 		def Base = CSG.unionAll(coreParts)
 				.union(calibrationFramemountUnit)
@@ -839,14 +860,16 @@ return new ICadGenerator(){
 				//.difference(calibrationTipKeepaway)
 				.difference(cordCutter);
 				
-			
-
+		CSG vent =ventCone.movey(Base.getMaxY())
+					.union(ventCone.movey(-Base.getMaxY()))
+					.hull()
+		vent = vent.union(vent.movez(10)).hull();
 		CSG boundingBase=Base.getBoundingBox()
 		Base = Base.intersect(boundingBase.toXMin().movex(-baseCorRad))	
 		Base = Base.intersect(boundingBase.toZMin())
 		Base = Base.union(pointer.movex(Base.getMaxX()-2))
 						.union(pointer.rotz(90).movey(-baseCorRad+2))
-
+						.difference(vent)
 		def pcbmount = ScriptingEngine.gitScriptRun(
 				"https://github.com/Hephaestus-Arm/HephaestusArm2.git", // git location of the library
 				"pcbmountpoints.groovy" , // file to load
@@ -958,7 +981,7 @@ return new ICadGenerator(){
 		})
 		paper.setColor(javafx.scene.paint.Color.WHITE)
 		
-		allCad.addAll(Base,paper,board)//cardboard,board,paper
+		allCad.addAll(Base,ventCone)//cardboard,board,paper
 		Base.addExportFormat("stl")
 		Base.addExportFormat("svg")
 		Base.setName("BaseMount")
