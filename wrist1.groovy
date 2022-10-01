@@ -55,6 +55,7 @@ CSG shaft=   Vitamins.get(	type,size)
 				
 shaft=moveDHValues(shaft,dh)
 def mountPlateToHornTop = Vitamins.getConfiguration(type,size).get("mountPlateToHornTop")
+def caseScrewKeepawayLength = Vitamins.getConfiguration(type,size).get("caseScrewKeepawayLength")
 def bearingHeight =mountPlateToHornTop-2
 CSG thrust = moveDHValues(Vitamins.get("ballBearing","Thrust_1andAHalfinch")
 						.movez(bearingHeight),dh)
@@ -87,7 +88,7 @@ def supportBeam= new RoundedCube(motormeasurments.body_y+linkThickness+motormeas
 HashMap<String, Object> hornCOnfig = Vitamins.getConfiguration(type,size)
 def baseCoreheight = shaft.getTotalZ()-mountPlateToHornTop
 CSG hornKW = moveDHValues(new Cylinder(hornCOnfig.hornDiameter/2+1, d.getDH_D(linkIndex)).toCSG()
-							.movez(mountPlateToHornTop+7)
+							.movez(mountPlateToHornTop+caseScrewKeepawayLength)
 	,dh)
 				.setManipulator(manipulator)
 CSG baseCore = moveDHValues(new Cylinder(baseCorRad,baseCorRad,baseCoreheight,36).toCSG()
@@ -108,7 +109,7 @@ baseCore.setManufacturing({
 	it.rotx(-90).toZMin()
 })
 
-return [baseCore].collect{it.setColor(javafx.scene.paint.Color.GREY)}
+return [baseCore,shaft].collect{it.setColor(javafx.scene.paint.Color.GREY)}
 
 
 
