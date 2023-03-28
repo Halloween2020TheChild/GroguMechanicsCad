@@ -549,8 +549,8 @@
 
 </parallelGroupTipOffset>
 	<cadEngine>
-		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
+		<file>supportCrane.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
