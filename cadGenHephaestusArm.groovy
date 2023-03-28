@@ -59,8 +59,10 @@ CSG moveDHValues(CSG incoming,DHLink dh ){
 
 return new ICadGenerator(){
 
-			static final double rotationOfBaseMotor = -135
+			 double rotationOfBaseMotor = -135
 
+			 double  VentHeight = 35
+			 double VentOffset= 10
 			int bracketOneKeepawayDistance = 50
 
 			double motorGearPlateThickness = 10
@@ -789,7 +791,8 @@ return new ICadGenerator(){
 
 					CSG motorModel=   Vitamins.get(conf.getElectroMechanicalType(),conf.getElectroMechanicalSize())
 					double zOffset = motorModel.getMaxZ()
-					TransformNR locationOfMotorMount = dev.getRobotToFiducialTransform().copy()
+					def devGetRobotToFiducialTransform = dev.getRobotToFiducialTransform()
+					TransformNR locationOfMotorMount = devGetRobotToFiducialTransform.copy()
 					TransformNR locationOfBearing = locationOfMotorMount.copy()
 					double baseCoreheight = 1;
 					if(locationOfBearing.getZ()>baseCoreheight)
@@ -798,11 +801,21 @@ return new ICadGenerator(){
 					TransformNR pinionRoot = locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1)
 					def extractionLocationOfMotor =locationOfMotorMount.copy().translateZ(-20)
 					def vitaminLocationsTmp = new HashMap<TransformNR,ArrayList<String>>()
+					def mototLoc =locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1)
+					if(conf.getElectroMechanicalType().contentEquals("ballBearing")) {
+						mototLoc=locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1 -motorModel.getTotalZ())
+						pinionRoot = locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+6)
+						extractionLocationOfMotor =mototLoc.copy().translateZ(-motorModel.getTotalZ())
+						vitaminLocationsTmp.put(extractionLocationOfMotor.copy().translateZ(-motorModel.getTotalZ()), [
+							conf.getElectroMechanicalType(),
+							conf.getElectroMechanicalSize()
+						])
+					}
 					vitaminLocationsTmp.put(locationOfBearing.copy().translateZ(-1), [
 						"ballBearing",
 						thrustBearingSize
 					])
-					vitaminLocationsTmp.put(locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1), [
+					vitaminLocationsTmp.put(mototLoc, [
 						conf.getElectroMechanicalType(),
 						conf.getElectroMechanicalSize()
 					])
@@ -829,7 +842,7 @@ return new ICadGenerator(){
 						vitaminForMotor.add(part)
 						//part=part.movez(-55)
 						part.setManipulator(b.getRootListener())
-						allCad.add(part)
+						//allCad.add(part)
 						part.setManufacturing ({ mfg ->
 							return null;
 						})
@@ -938,7 +951,7 @@ return new ICadGenerator(){
 						new Vector3d(0, 3, 0)
 					]
 					CSG pointer = HullUtil.hull(points)
-					CSG ventCone = Parabola.coneByHeight(15, 35)
+					CSG ventCone = Parabola.coneByHeight(15, VentHeight)
 							.rotx(90)
 							.toZMin()
 					def Base = CSG.unionAll(coreParts)
@@ -951,7 +964,7 @@ return new ICadGenerator(){
 					CSG vent =ventCone.movey(Base.getMaxY())
 							.union(ventCone.movey(-Base.getMaxY()))
 							.hull()
-					vent = vent.union(vent.movez(10)).hull();
+					vent = vent.union(vent.movez(VentOffset)).hull();
 					CSG boundingBase=Base.getBoundingBox()
 					Base = Base.intersect(boundingBase.toXMin().movex(-baseCorRad))
 					Base = Base.intersect(boundingBase.toZMin())
@@ -995,8 +1008,8 @@ return new ICadGenerator(){
 					pcbmount = pcbmount.movez(-pcbmount.getMinZ()+2)
 
 					Base = Base.union(pcbmount)
-							.movez(-55)
-							.transformed(TransformFactory.nrToCSG(dev.getRobotToFiducialTransform()))
+							.movez(-devGetRobotToFiducialTransform.getZ())
+							.transformed(TransformFactory.nrToCSG(devGetRobotToFiducialTransform))
 							.difference(vitaminForMotor)
 					Base.setColor(javafx.scene.paint.Color.PINK)
 					// add it to the return list
