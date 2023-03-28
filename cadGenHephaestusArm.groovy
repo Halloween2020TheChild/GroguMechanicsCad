@@ -761,6 +761,7 @@ return new ICadGenerator(){
 				def poseInCal =null
 				double extra=0
 				for(DHParameterKinematics dev:b.getAllDHChains()) {
+					def devGet = dev==b.getAllDHChains().get(0)
 					//Do additional CAD and add to the running CoM
 					def thrustMeasurments= Vitamins.getConfiguration("ballBearing",
 							thrustBearingSize)
@@ -796,36 +797,43 @@ return new ICadGenerator(){
 					locationOfMotorMount.translateZ(-zOffset)
 					TransformNR pinionRoot = locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1)
 					def extractionLocationOfMotor =locationOfMotorMount.copy().translateZ(-20)
-
-					vitaminLocations.put(locationOfBearing.copy().translateZ(-1), [
+					def vitaminLocationsTmp = new HashMap<TransformNR,ArrayList<String>>()
+					vitaminLocationsTmp.put(locationOfBearing.copy().translateZ(-1), [
 						"ballBearing",
 						thrustBearingSize
 					])
-					vitaminLocations.put(locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1), [
+					vitaminLocationsTmp.put(locationOfMotorMount.copy().translateZ(topOfHornToBotomOfBaseLinkDistance+1), [
 						conf.getElectroMechanicalType(),
 						conf.getElectroMechanicalSize()
 					])
-					vitaminLocations.put(extractionLocationOfMotor, [
+					vitaminLocationsTmp.put(extractionLocationOfMotor, [
 						conf.getElectroMechanicalType(),
 						conf.getElectroMechanicalSize()
 					])
 					// cut the hole in the base for the shaft
-					vitaminLocations.put(pinionRoot, [
+					vitaminLocationsTmp.put(pinionRoot, [
 						conf.getShaftType(),
 						conf.getShaftSize()
 					])
 					def vitaminForMotor=[]
-					for(TransformNR tr: vitaminLocations.keySet()) {
-						def vitaminType = vitaminLocations.get(tr)[0]
-						def vitaminSize = vitaminLocations.get(tr)[1]
+					for(TransformNR tr: vitaminLocationsTmp.keySet()) {
+						def vitaminType = vitaminLocationsTmp.get(tr)[0]
+						def vitaminSize = vitaminLocationsTmp.get(tr)[1]
 	
 						HashMap<String, Object>  measurments = Vitamins.getConfiguration( vitaminType,vitaminSize)
 						offset.setMM(offsetValue)
 						CSG vitaminCad=   Vitamins.get(vitaminType,vitaminSize)
 						Transform move = TransformFactory.nrToCSG(tr)
 						CSG part = vitaminCad.transformed(move)
-						part.setManipulator(dev.getRootListener())
+						
 						vitaminForMotor.add(part)
+						//part=part.movez(-55)
+						part.setManipulator(b.getRootListener())
+						allCad.add(part)
+						part.setManufacturing ({ mfg ->
+							return null;
+						})
+						
 					}
 
 					CSG baseCore = new Cylinder(baseCorRad,baseCorRad,baseCoreheight,36).toCSG()
@@ -869,7 +877,8 @@ return new ICadGenerator(){
 
 
 
-					if(dev==b.getAllDHChains().get(0)) {
+					
+					if(devGet) {
 						//dev.setDesiredTaskSpaceTransform(locationOfCalibration, 0);
 						def jointSpaceVect = dev.inverseKinematics(dev.inverseOffset(locationOfCalibration));
 
@@ -932,12 +941,10 @@ return new ICadGenerator(){
 					CSG ventCone = Parabola.coneByHeight(15, 35)
 							.rotx(90)
 							.toZMin()
-
 					def Base = CSG.unionAll(coreParts)
 							.union(calibrationFramemountUnit)
 							//.difference(vitamin_roundMotor_WPI_gb37y3530bracketOneKeepawayDistanceen)
 							.difference(vitamins)
-							.difference(vitaminForMotor)
 							//.difference(calibrationTipKeepaway)
 							.difference(cordCutter);
 
@@ -982,7 +989,7 @@ return new ICadGenerator(){
 								//Hole Dia
 								2, //Height
 							])
-					if(dev==b.getAllDHChains().get(0))
+					if(devGet)
 						extra = Math.abs(Base.getMinX())
 					pcbmount = pcbmount.union(pcbmounttop.movey(40)).rotz(90).roty(90).movex(Base.getMinX())
 					pcbmount = pcbmount.movez(-pcbmount.getMinZ()+2)
@@ -990,6 +997,7 @@ return new ICadGenerator(){
 					Base = Base.union(pcbmount)
 							.movez(-55)
 							.transformed(TransformFactory.nrToCSG(dev.getRobotToFiducialTransform()))
+							.difference(vitaminForMotor)
 					Base.setColor(javafx.scene.paint.Color.PINK)
 					// add it to the return list
 					Base.setManipulator(b.getRootListener())
@@ -999,12 +1007,7 @@ return new ICadGenerator(){
 							return null;
 						})
 					}
-					for(def c:vitaminForMotor) {
-						//allCad.add(c)
-						c.setManufacturing ({ mfg ->
-							return null;
-						})
-					}
+
 					allCad.addAll([Base])//cardboard,board,paper
 					Base.addExportFormat("stl")
 					Base.addExportFormat("svg")
