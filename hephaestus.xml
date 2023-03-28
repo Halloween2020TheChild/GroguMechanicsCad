@@ -8,11 +8,18 @@
 		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
 		<file>walking.groovy</file>
 	</driveEngine>
+	<parallelCadEngine>
+		<parallelGroup>headGroup</parallelGroup>
+		<git>https://gist.github.com/33f2c10ab3adc5bd91f0a58ea7f24d14.git</git>
+		<file>parallelTool.groovy</file>
+	</parallelCadEngine>
 
 <name>Standard6dof</name>
 <appendage>
 
 <name>Standard6dofArm1</name>
+
+<parallelGroup>headGroup</parallelGroup>
 	<cadEngine>
 		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
 		<file>cadGenHephaestusArm.groovy</file>
@@ -435,13 +442,13 @@
 </link>
 
 <ZframeToRAS
->	<x>142.44775179372846</x>
-	<y>-76.78135155765814</y>
-	<z>253.9942386717295</z>
-	<rotw>0.6528052360001918</rotw>
-	<rotx>0.27051387196101995</rotx>
-	<roty>0.27117661247227887</roty>
-	<rotz>0.6535524567893922</rotz>
+>	<x>142.42641577901043</x>
+	<y>-0.05103803447560798</y>
+	<z>292.42639350946615</z>
+	<rotw>0.6530965885738775</rotw>
+	<rotx>0.2707218371012406</rotx>
+	<roty>0.2704742362555709</roty>
+	<rotz>0.653466311627201</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
@@ -457,13 +464,13 @@
 </appendage>
 
 <ZframeToRAS>
-	<x>142.44775179372846</x>
-	<y>-76.78135155765814</y>
-	<z>253.9942386717295</z>
-	<rotw>0.6528052360001918</rotw>
-	<rotx>0.27051387196101995</rotx>
-	<roty>0.27117661247227887</roty>
-	<rotz>0.6535524567893922</rotz>
+	<x>142.42641577901043</x>
+	<y>-0.05103803447560798</y>
+	<z>292.42639350946615</z>
+	<rotw>0.6530965885738775</rotw>
+	<rotx>0.2707218371012406</rotx>
+	<roty>0.2704742362555709</roty>
+	<rotz>0.653466311627201</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
@@ -475,7 +482,7 @@
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
 </baseToZframe>
-	<mass>0.5</mass>
+	<mass>0.005</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -525,6 +532,22 @@
 <appendage>
 
 <name>supportCrane</name>
+
+<parallelGroup>headGroup</parallelGroup>
+
+<parallelGroupTipOffset>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+	<relativeTo>Standard6dofArm1</relativeTo>
+
+	<relativeToLink>5</relativeToLink>
+
+</parallelGroupTipOffset>
 	<cadEngine>
 		<git>https://github.com/madhephaestus/carl-the-hexapod.git</git>
 		<file>ThreeDPrintCad.groovy</file>
@@ -582,9 +605,9 @@
 	<rotz>-0.0</rotz></imuFromCentroid>
 
 	<DHParameters>
-		<Delta>0.0</Delta>
+		<Delta>250.0</Delta>
 		<Theta>0.0</Theta>
-		<Radius>60.0</Radius>
+		<Radius>0.0</Radius>
 		<Alpha>-90.0</Alpha>
 	</DHParameters>
 
@@ -639,8 +662,8 @@
 
 	<DHParameters>
 		<Delta>0.0</Delta>
-		<Theta>-90.0</Theta>
-		<Radius>93.0</Radius>
+		<Theta>0.0</Theta>
+		<Radius>200.0</Radius>
 		<Alpha>0.0</Alpha>
 	</DHParameters>
 
@@ -707,9 +730,9 @@
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
@@ -743,7 +766,7 @@
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
 </baseToZframe>
-	<mass>0.20060000000000003</mass>
+	<mass>0.5</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
