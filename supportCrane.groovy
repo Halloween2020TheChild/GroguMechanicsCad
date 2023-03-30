@@ -15,7 +15,7 @@ import eu.mihosoft.vrl.v3d.Parabola
 import eu.mihosoft.vrl.v3d.Transform
 import javafx.scene.transform.Affine
 
-// code here
+double boardThickness =6.3
 
 return new ICadGenerator(){
 			CSG moveDHValues(CSG incoming,DHLink dh ){
@@ -66,18 +66,25 @@ return new ICadGenerator(){
 					CSG mount = Vitamins.get("heatedThreadedInsert", "M5")
 							.toZMax()
 							.movez(baseCoreheight+mountPlateToHornTop)
-							
+
 					def mounts =[mount]
 					mount=mount.movex(25.0)
 					for(def i=0;i<360;i+=90) {
-						mounts.add(mount.rotz(i))
+						mounts.add(mount.rotz(i+45))
 					}
 					//end Mount holes
-
-					// Link
-
+					CSG boardHole=new Cylinder(5.5/2.0,boardThickness*2).toCSG()
+							.rotx(90)
+							.movey(-boardThickness)
+							.movez(boardThickness)
+					CSG boardMountLug = new Cube( mount.getTotalX()+5, boardThickness*2,mount.getTotalY()+5).toCSG()
+							.toZMin()
+							.difference(boardHole)
+							.movez(baseCoreheight+mountPlateToHornTop)
+							.movex(25.0)
 					CSG baseCore = new Cylinder(baseCorRad,baseCorRad,baseCoreheight,36).toCSG()
 							.movez(mountPlateToHornTop)
+							.union(boardMountLug)
 							.difference(thrust)
 							.difference(vitaminCad)
 							.difference(mounts)
