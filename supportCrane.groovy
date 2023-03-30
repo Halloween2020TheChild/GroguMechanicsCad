@@ -61,33 +61,48 @@ return new ICadGenerator(){
 					def thrustMeasurments= Vitamins.getConfiguration("ballBearing","Thrust_1andAHalfinch")
 					double baseCorRad = thrustMeasurments.outerDiameter/2+5
 					//END vitamins
-
+					CSG boardBolt = Vitamins.get("capScrew","M5x25")
+									.movez(boardThickness*1.5)
+									.rotx(90)
+									.movez(boardThickness+baseCoreheight+mountPlateToHornTop)
+									.movex(25.0)
+					CSG locknut = Vitamins.get("lockNut","M5")
+										.movez(boardThickness*1.5)
+										.rotx(-90)
+										.movez(boardThickness+baseCoreheight+mountPlateToHornTop)
+										.movex(25.0)
 					//Mount holes
 					CSG mount = Vitamins.get("heatedThreadedInsert", "M5")
 							.toZMax()
 							.movez(baseCoreheight+mountPlateToHornTop)
-
-					def mounts =[mount]
-					mount=mount.movex(25.0)
-					for(def i=0;i<360;i+=90) {
-						mounts.add(mount.rotz(i+45))
-					}
-					//end Mount holes
 					CSG boardHole=new Cylinder(5.5/2.0,boardThickness*2).toCSG()
 							.rotx(90)
 							.movey(-boardThickness)
 							.movez(boardThickness)
-					CSG boardMountLug = new Cube( mount.getTotalX()+5, boardThickness*2,mount.getTotalY()+5).toCSG()
+					CSG boardMountLug = new Cube( mount.getTotalX()+5, boardThickness,mount.getTotalY()+5).toCSG()
 							.toZMin()
 							.difference(boardHole)
 							.movez(baseCoreheight+mountPlateToHornTop)
 							.movex(25.0)
+					def mounts =[mount]
+					def lugs = []
+					def vitamins=[]
+					mount=mount.movex(25.0)
+					for(def i=0;i<360;i+=90) {
+						mounts.add(mount.rotz(i+45))
+						lugs.add(boardMountLug.rotz(i))
+						vitamins.add(boardBolt.rotz(i))
+						vitamins.add(locknut.rotz(i))
+					}
+					//end Mount holes
+
 					CSG baseCore = new Cylinder(baseCorRad,baseCorRad,baseCoreheight,36).toCSG()
 							.movez(mountPlateToHornTop)
-							.union(boardMountLug)
+							.union(lugs)
 							.difference(thrust)
 							.difference(vitaminCad)
 							.difference(mounts)
+					mounts.addAll(vitamins)
 					mounts=mounts.collect{moveDHValues(it, dh).setManipulator(manipulator)}
 					vitaminCad = moveDHValues(vitaminCad, dh)
 					thrust = moveDHValues(thrust, dh)
@@ -98,6 +113,8 @@ return new ICadGenerator(){
 					vitaminCad.setManipulator(manipulator)
 					thrust.setManipulator(manipulator)
 					mounts.addAll([vitaminCad, thrust])
+					
+					
 					for(CSG c:mounts) {
 						c.setManufacturing({
 							return null
