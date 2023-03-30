@@ -76,18 +76,10 @@ return new ICadGenerator(){
 
 					// Link
 
-					CSG allignment = Parabola.coneByHeight(4, 6)
-							.rotx(-90)
-							.toZMin()
-							.movez(baseCoreheight)
-							.toYMin()
-							.movey(-baseCorRad+2)
-							.rotz(45)
 					CSG baseCore = new Cylinder(baseCorRad,baseCorRad,baseCoreheight,36).toCSG()
 							.movez(mountPlateToHornTop)
 							.difference(thrust)
 							.difference(vitaminCad)
-							.difference(allignment)
 							.difference(mounts)
 					mounts=mounts.collect{moveDHValues(it, dh).setManipulator(manipulator)}
 					vitaminCad = moveDHValues(vitaminCad, dh)
