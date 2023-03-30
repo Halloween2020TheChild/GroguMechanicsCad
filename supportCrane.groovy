@@ -52,9 +52,9 @@ return new ICadGenerator(){
 
 					CSG vitaminCad=    Vitamins.get(	type,size)
 							.roty(180)
-							.movez(-bearing.getTotalZ())
+							.movez(-bearing.getTotalZ()*2)
 
-					def baseCoreheight = 20.0-mountPlateToHornTop
+					def baseCoreheight = 25-mountPlateToHornTop-bearing.getTotalZ()*2
 					def bearingHeight =mountPlateToHornTop-2
 					CSG thrust = Vitamins.get("ballBearing","Thrust_1andAHalfinch")
 							.movez(bearingHeight)
@@ -66,8 +66,9 @@ return new ICadGenerator(){
 					CSG mount = Vitamins.get("heatedThreadedInsert", "M5")
 							.toZMax()
 							.movez(baseCoreheight+mountPlateToHornTop)
-							.movex(25.0)
-					def mounts =[]
+							
+					def mounts =[mount]
+					mount=mount.movex(25.0)
 					for(def i=0;i<360;i+=90) {
 						mounts.add(mount.rotz(i))
 					}
