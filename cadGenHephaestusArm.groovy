@@ -905,7 +905,12 @@ return new ICadGenerator(){
 
 
 						def calibrationFrame = TransformFactory.nrToCSG(locationOfCalibration)
-						//.movex(centerlineToOuterSurfaceNegativeZ)
+						HashMap<String,Object> measurmentsMotor = Vitamins.getConfiguration(  "LewanSoulMotor","lx_224")
+						double motorz =  measurmentsMotor.body_z
+						double centerTheMotorsValue=motorz/2;
+
+						def motorLocation = new TransformNR(0,0,centerTheMotorsValue,new RotationNR())
+						def l3Args = [b.getAllDHChains().get(0),5,centerTheMotorsValue,motorLocation]
 						calibrationFramemountUnit=[
 							calibrationCore
 							.rotx(180)
@@ -917,7 +922,7 @@ return new ICadGenerator(){
 							"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
 							"wrist3.groovy" , // file to load
 							// Parameters passed to the funcetion
-							null
+							l3Args
 							).collect{
 								it.transformed(calibrationFrame)}
 							)
