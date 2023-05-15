@@ -18,7 +18,7 @@ return new ICadGenerator() {
 
 	@Override
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
-		CSG headBall = new Sphere(100).toCSG()	
+		CSG headBall = new Sphere(12.0*25.4/2.0).toCSG()	
 						.movey(30)
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		DHLink dh = dhLinks.get(linkIndex)
