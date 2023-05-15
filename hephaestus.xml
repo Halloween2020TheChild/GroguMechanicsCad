@@ -389,7 +389,7 @@
 	<deviceName>GroguArm</deviceName>
 	<type>udp-7dof-float</type>
 	<index>6</index>
-	<scale>1.0</scale>
+	<scale>0.25</scale>
 	<upperLimit>110.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
 	<upperVelocity>400.0</upperVelocity>
@@ -453,12 +453,12 @@
 
 <baseToZframe>
 	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<y>-30.0</y>
+	<z>60.0</z>
+	<rotw>0.5720614028182113</rotw>
+	<rotx>0.4156269377774534</rotx>
+	<roty>-0.5720614028171573</roty>
+	<rotz>-0.41562693777745346</rotz>
 </baseToZframe>
 
 </appendage>
