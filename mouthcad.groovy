@@ -14,10 +14,12 @@ import javafx.scene.transform.Affine
 
 return new ICadGenerator() {
 
+	private MobileBase arg0;
+
 	@Override
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		CSG headBall = new Sphere(100).toCSG()	
-						.movey(-50)
+						.movey(30)
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		DHLink dh = dhLinks.get(linkIndex)
 		// Hardware to engineering units configuration
@@ -26,21 +28,24 @@ return new ICadGenerator() {
 		AbstractLink abstractLink = d.getAbstractLink(linkIndex);
 		// Transform used by the UI to render the location of the object
 		
-		//Horn section
 		Affine manipulator = dh.getListener();
-		Affine root=dh.getRootListener()
-		CSG headBallTop =headBall.intersect(headBall.getBoundingBox().toYMax())
-		headBallTop.setManipulator(root)
+		Affine root=d.getRootListener()
+		println "Root Affine ID="+root
+		CSG headBallTop =headBall.intersect(headBall.getBoundingBox().toYMin())
+		
 		CSG jaw =headBall.intersect(headBall.getBoundingBox().toYMax().toXMin())
 		
 		jaw.setManipulator(manipulator)
+		headBallTop.setManipulator(root)
 		
 		return Arrays.asList(headBallTop,jaw) ;
 	}
 
 	@Override
 	public ArrayList<CSG> generateBody(MobileBase arg0) {
+		this.arg0 = arg0;
 		// TODO Auto-generated method stub
+		
 		return Arrays.asList(new Cube(1).toCSG()) ;
 	}
 	

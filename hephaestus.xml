@@ -390,7 +390,7 @@
 	<type>udp-7dof-float</type>
 	<index>6</index>
 	<scale>0.25</scale>
-	<upperLimit>110.0</upperLimit>
+	<upperLimit>0.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
 	<upperVelocity>400.0</upperVelocity>
 	<lowerVelocity>-400.0</lowerVelocity>
@@ -433,7 +433,7 @@
 	<rotz>-0.0</rotz></imuFromCentroid>
 
 	<DHParameters>
-		<Delta>9.0</Delta>
+		<Delta>0.0</Delta>
 		<Theta>0.0</Theta>
 		<Radius>0.0</Radius>
 		<Alpha>0.0</Alpha>
@@ -455,10 +455,10 @@
 	<x>0.0</x>
 	<y>-30.0</y>
 	<z>60.0</z>
-	<rotw>0.5720614028182113</rotw>
-	<rotx>0.4156269377774534</rotx>
-	<roty>-0.5720614028171573</roty>
-	<rotz>-0.41562693777745346</rotz>
+	<rotw>0.6532814824385313</rotw>
+	<rotx>0.27059805007309845</rotx>
+	<roty>-0.6532814824378451</roty>
+	<rotz>-0.27059805007309845</rotz>
 </baseToZframe>
 
 </appendage>
