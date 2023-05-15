@@ -390,11 +390,11 @@
 	<type>udp-7dof-float</type>
 	<index>6</index>
 	<scale>0.25</scale>
-	<upperLimit>0.0</upperLimit>
+	<upperLimit>110.0</upperLimit>
 	<lowerLimit>-110.0</lowerLimit>
 	<upperVelocity>400.0</upperVelocity>
 	<lowerVelocity>-400.0</lowerVelocity>
-	<staticOffset>0.0</staticOffset>
+	<staticOffset>109.0</staticOffset>
 	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
 	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
 	<isLatch>false</isLatch>
