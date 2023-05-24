@@ -442,13 +442,13 @@
 </link>
 
 <ZframeToRAS
->	<x>136.00497928525255</x>
-	<y>0.12720208054128435</y>
-	<z>260.0107545911485</z>
-	<rotw>0.6543789512023936</rotw>
-	<rotx>0.2942869040706307</rotx>
-	<roty>0.24444236710759779</roty>
-	<rotz>0.6522509758356925</rotz>
+>	<x>142.42599211715867</x>
+	<y>0.1671251041179296</y>
+	<z>292.4260193472575</z>
+	<rotw>0.6525046856779598</rotw>
+	<rotx>0.2692962153504726</rotx>
+	<roty>0.27189906508114464</roty>
+	<rotz>0.6540551062213475</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
@@ -529,81 +529,25 @@
 	</DHParameters>
 
 </link>
-<link>
-	<name>elbow</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>2</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>121.0</staticOffset>
-	<deviceTheoreticalMax>255.0</deviceTheoreticalMax>
-	<deviceTheoreticalMin>0.0</deviceTheoreticalMin>
-	<isLatch>true</isLatch>
-	<indexLatch>121.0</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-
-	<vitamins>
-		<vitamin>
-			<name>electroMechanical</name>
-			<type>hobbyServo</type>
-			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>90.0</Theta>
-		<Radius>131.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
 
 <ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+>	<x>142.42599211715867</x>
+	<y>0.1671251041179296</y>
+	<z>292.4260193472575</z>
+	<rotw>0.6525046856779598</rotw>
+	<rotx>0.2692962153504726</rotx>
+	<roty>0.27189906508114464</roty>
+	<rotz>0.6540551062213475</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
-	<x>0.0</x>
+	<x>105.0</x>
 	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<z>180.0</z>
+	<rotw>0.6532814824381883</rotw>
+	<rotx>0.27059805007309845</rotx>
+	<roty>-0.6532814824381882</roty>
+	<rotz>-0.2705980500730985</rotz>
 </baseToZframe>
 
 </appendage>
@@ -676,35 +620,35 @@
 </link>
 
 <ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+>	<x>142.42599211715867</x>
+	<y>0.1671251041179296</y>
+	<z>292.4260193472575</z>
+	<rotw>0.6525046856779598</rotw>
+	<rotx>0.2692962153504726</rotx>
+	<roty>0.27189906508114464</roty>
+	<rotz>0.6540551062213475</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
-	<x>0.0</x>
+	<x>-105.0</x>
 	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
+	<z>180.0</z>
+	<rotw>0.6532814824381883</rotw>
+	<rotx>0.27059805007309845</rotx>
+	<roty>-0.6532814824381882</roty>
+	<rotz>-0.2705980500730985</rotz>
 </baseToZframe>
 
 </appendage>
 
 <ZframeToRAS>
-	<x>136.00497928525255</x>
-	<y>0.12720208054128435</y>
-	<z>260.0107545911485</z>
-	<rotw>0.6543789512023936</rotw>
-	<rotx>0.2942869040706307</rotx>
-	<roty>0.24444236710759779</roty>
-	<rotz>0.6522509758356925</rotz>
+	<x>142.42599211715867</x>
+	<y>0.1671251041179296</y>
+	<z>292.4260193472575</z>
+	<rotw>0.6525046856779598</rotw>
+	<rotx>0.2692962153504726</rotx>
+	<roty>0.27189906508114464</roty>
+	<rotz>0.6540551062213475</rotz>
 </ZframeToRAS>
 
 <baseToZframe>
