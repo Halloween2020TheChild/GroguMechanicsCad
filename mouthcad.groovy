@@ -7,7 +7,9 @@ import com.neuronrobotics.sdk.addons.kinematics.MobileBase
 
 import eu.mihosoft.vrl.v3d.CSG
 import eu.mihosoft.vrl.v3d.Cube
+import eu.mihosoft.vrl.v3d.Parabola
 import eu.mihosoft.vrl.v3d.Sphere
+import javafx.scene.paint.Color
 import javafx.scene.transform.Affine
 
 //Your code here
@@ -18,7 +20,9 @@ return new ICadGenerator() {
 
 	@Override
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
-		CSG headBall = new Sphere(12.0*25.4/2.0).toCSG()	
+		
+		def name = 12.0*25.4/2.0
+		CSG headBall = new Sphere(name).toCSG()	
 						.movey(30)
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		DHLink dh = dhLinks.get(linkIndex)
@@ -34,11 +38,14 @@ return new ICadGenerator() {
 		CSG headBallTop =headBall.intersect(headBall.getBoundingBox().toYMin())
 		
 		CSG jaw =headBall.intersect(headBall.getBoundingBox().toYMax().toXMin())
-		
+		CSG nose = Parabola.cone(20, 15)
+					.movez(name)
+					.setColor(Color.RED)
+					.setManipulator(root)
 		jaw.setManipulator(manipulator)
 		headBallTop.setManipulator(root)
 		
-		return Arrays.asList(headBallTop,jaw) ;
+		return Arrays.asList(headBallTop,jaw,nose) ;
 	}
 
 	@Override
