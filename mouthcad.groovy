@@ -22,7 +22,9 @@ return new ICadGenerator() {
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		
 		def name = 12.0*25.4/2.0
-		CSG headBall = new Sphere(name).toCSG()	
+		CSG headtop = Parabola.cone(name, name)
+		CSG headBall = 	headtop.union(headtop.rotx(180))
+						.scaley(1.2)
 						.movey(30)
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		DHLink dh = dhLinks.get(linkIndex)
@@ -38,8 +40,10 @@ return new ICadGenerator() {
 		CSG headBallTop =headBall.intersect(headBall.getBoundingBox().toYMin())
 		
 		CSG jaw =headBall.intersect(headBall.getBoundingBox().toYMax().toXMin())
-		CSG nose = Parabola.cone(20, 15)
-					.movez(name)
+		CSG nose = Parabola.cone(30, 50)
+					.movez(name-15)
+					.movey(30)
+					.roty(-90)
 					.setColor(Color.RED)
 					.setManipulator(root)
 		jaw.setManipulator(manipulator)
