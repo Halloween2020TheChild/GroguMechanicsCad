@@ -498,14 +498,14 @@ return new ICadGenerator(){
 					])
 
 					FullBracket.setManufacturing({incoming->return incoming.toZMin()})
-
+					MotorMountBracket.setManufacturing({incoming->return incoming.toZMin().rotz(90)})
 					MotorMountBracket.setColor(javafx.scene.paint.Color.DARKCYAN)
 					FullBracket.setColor(javafx.scene.paint.Color.YELLOW)
 					MotorMountBracket.setManipulator(manipulator)
 					FullBracket.setManipulator(manipulator)
 					FullBracket.setName("MiddleLinkMainBracket")
 					MotorMountBracket.setName("MiddleLinkActuatorBracket")
-					allCad.addAll(FullBracket,MotorMountBracket)
+					allCad.addAll([FullBracket,MotorMountBracket])
 				}
 
 				if(linkIndex==0) {

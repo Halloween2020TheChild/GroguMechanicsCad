@@ -100,6 +100,7 @@ for(CSG c:mounts) {
 }
 baseCore.addExportFormat("svg")
 baseCore.addExportFormat("stl")
+baseCore.getStorage().set("printBedIndex",3);
 
 baseCore.setManufacturing({
 		return it.rotx(180).toZMin()
