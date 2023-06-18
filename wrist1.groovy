@@ -54,6 +54,7 @@ def size = d.getLinkConfiguration(linkIndex-1).getShaftSize()
 CSG shaft=   Vitamins.get(	type,size)
 				
 shaft=moveDHValues(shaft,dh)
+shaft.setManufacturing({return null})
 def mountPlateToHornTop = Vitamins.getConfiguration(type,size).get("mountPlateToHornTop")
 def caseScrewKeepawayLength = Vitamins.getConfiguration(type,size).get("caseScrewKeepawayLength")
 def bearingHeight =mountPlateToHornTop-2

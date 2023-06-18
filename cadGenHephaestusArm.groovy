@@ -497,7 +497,7 @@ return new ICadGenerator(){
 						springPathPassiveMountKW
 					])
 
-
+					FullBracket.setManufacturing({incoming->return incoming.toZMin()})
 
 					MotorMountBracket.setColor(javafx.scene.paint.Color.DARKCYAN)
 					FullBracket.setColor(javafx.scene.paint.Color.YELLOW)
