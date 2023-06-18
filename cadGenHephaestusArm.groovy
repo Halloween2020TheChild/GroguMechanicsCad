@@ -1030,7 +1030,7 @@ return new ICadGenerator(){
 					allCad.addAll([Base])//cardboard,board,paper
 					Base.addExportFormat("stl")
 					Base.addExportFormat("svg")
-					Base.setName("BaseMount")
+					Base.setName("BaseMount"+dev.getScriptingName())
 					Base.getStorage().set("printBedIndex",bedIndex++);
 				}
 

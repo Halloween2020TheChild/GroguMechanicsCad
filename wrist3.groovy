@@ -104,7 +104,7 @@ for(CSG c:mounts) {
 baseCore.setManufacturing({
 		return it.rotx(180).toZMin()
 	})
-baseCore.setName("EndEffectorPlate")
+baseCore.setName("EndEffectorMount")
 mounts.add(baseCore)
 return mounts.collect{it.setColor(javafx.scene.paint.Color.PINK)}
 
