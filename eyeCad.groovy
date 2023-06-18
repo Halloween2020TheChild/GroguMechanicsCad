@@ -44,6 +44,7 @@ return new ICadGenerator() {
 		for(CSG c:list) {
 			c.setManufacturing({return null})
 		}
+		return  list;
 	}
 
 	@Override

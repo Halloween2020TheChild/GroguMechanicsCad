@@ -23,7 +23,11 @@ return new ICadGenerator(){
 				Transform move = com.neuronrobotics.bowlerstudio.physics.TransformFactory.nrToCSG(step)
 				return incoming.transformed(move)
 			}
-
+			CSG reverseDHValues(CSG incoming,DHLink dh ){
+				TransformNR step = new TransformNR(dh.DhStep(0))
+				Transform move = com.neuronrobotics.bowlerstudio.physics.TransformFactory.nrToCSG(step)
+				return incoming.transformed(move)
+			}
 			@Override
 			public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 				HashMap<String,Object> measurmentsMotor = Vitamins.getConfiguration(  "LewanSoulMotor","lx_224")
@@ -123,7 +127,7 @@ return new ICadGenerator(){
 					}
 					baseCore.setColor(javafx.scene.paint.Color.BLUE)
 					baseCore.setManufacturing({
-						return it.rotx(180).toZMin()
+						return reverseDHValues(it, dh).rotx(180).toZMin()
 					})
 					baseCore.setName("craneBase")
 					mounts.add(baseCore)
