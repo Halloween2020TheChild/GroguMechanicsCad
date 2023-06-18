@@ -762,6 +762,7 @@ return new ICadGenerator(){
 				def lowerInts=[]
 				def poseInCal =null
 				double extra=0
+				int bedIndex=0
 				for(DHParameterKinematics dev:b.getAllDHChains()) {
 					def devGet = dev==b.getAllDHChains().get(0)
 					//Do additional CAD and add to the running CoM
@@ -1030,6 +1031,7 @@ return new ICadGenerator(){
 					Base.addExportFormat("stl")
 					Base.addExportFormat("svg")
 					Base.setName("BaseMount")
+					Base.getStorage().set("printBedIndex",bedIndex++);
 				}
 
 				def paper = new Cube(8.5*25.4,11.0*25.4,1).toCSG()

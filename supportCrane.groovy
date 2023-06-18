@@ -131,6 +131,7 @@ return new ICadGenerator(){
 					})
 					baseCore.setName("craneBase")
 					mounts.add(baseCore)
+					baseCore.getStorage().set("printBedIndex",1);
 					return mounts
 				}
 				return new ArrayList();
