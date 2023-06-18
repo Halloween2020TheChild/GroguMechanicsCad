@@ -127,7 +127,7 @@ return new ICadGenerator(){
 					}
 					baseCore.setColor(javafx.scene.paint.Color.BLUE)
 					baseCore.setManufacturing({
-						return reverseDHValues(it, dh).rotx(180).toZMin()
+						return reverseDHValues(it, dh).toZMin()
 					})
 					baseCore.setName("craneBase")
 					mounts.add(baseCore)
