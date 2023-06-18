@@ -40,7 +40,10 @@ return new ICadGenerator() {
 		headBallTop.setManipulator(manipulator)
 		jaw.setColor(Color.WHITE)
 		
-		return Arrays.asList(headBallTop,jaw) ;
+		def list= Arrays.asList(headBallTop,jaw) ;
+		for(CSG c:list) {
+			c.setManufacturing({return null})
+		}
 	}
 
 	@Override

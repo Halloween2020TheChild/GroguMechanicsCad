@@ -49,7 +49,11 @@ return new ICadGenerator() {
 		jaw.setManipulator(manipulator)
 		headBallTop.setManipulator(root)
 		
-		return Arrays.asList(headBallTop,jaw,nose) ;
+		def list= Arrays.asList(headBallTop,jaw,nose) ;
+		for(CSG c:list) {
+			c.setManufacturing({return null})
+		}
+		return list
 	}
 
 	@Override
