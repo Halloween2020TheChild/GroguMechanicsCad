@@ -498,7 +498,7 @@ return new ICadGenerator(){
 					])
 
 					FullBracket.setManufacturing({incoming->return incoming.toZMin()})
-					MotorMountBracket.setManufacturing({incoming->return incoming.toZMin().rotz(60)})
+					MotorMountBracket.setManufacturing({incoming->return incoming.rotx(180).toZMin().rotz(60)})
 					MotorMountBracket.setColor(javafx.scene.paint.Color.DARKCYAN)
 					FullBracket.setColor(javafx.scene.paint.Color.YELLOW)
 					MotorMountBracket.setManipulator(manipulator)
