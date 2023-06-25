@@ -277,6 +277,7 @@ baseCore.setManufacturing({
 })
 driveSide.setName("elbowDriveLink")
 baseCore.setName("elbowThrustBearingSideLink")
+driveSide.setPrintBedNumber(1)
 
 return [driveSide,baseCore].collect{it.setColor(javafx.scene.paint.Color.LIGHTPINK)}
 

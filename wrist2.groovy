@@ -224,5 +224,7 @@ baseCore.setManufacturing({
 })
 driveSide.setName("wrist2Drive")
 baseCore.setName("wrist2ThrustBearingSide")
+driveSide.setPrintBedNumber(1)
+baseCore.setPrintBedNumber(1)
 
 return [driveSide,baseCore].collect{it.setColor(javafx.scene.paint.Color.RED)}
