@@ -58,7 +58,7 @@ return new ICadGenerator(){
 							.roty(180)
 							.movez(-bearing.getTotalZ()*2)
 
-					def baseCoreheight = 25-mountPlateToHornTop-bearing.getTotalZ()*2
+					def baseCoreheight = 20-mountPlateToHornTop-bearing.getTotalZ()*2
 					def bearingHeight =mountPlateToHornTop-2
 					CSG thrust = Vitamins.get("ballBearing","Thrust_1andAHalfinch")
 							.movez(bearingHeight)
