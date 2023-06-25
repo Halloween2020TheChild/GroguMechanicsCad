@@ -1026,7 +1026,9 @@ return new ICadGenerator(){
 							return null;
 						})
 					}
-
+					Base.setManufacturing ({ mfg ->
+					return mfg.toZMin()
+				})
 					allCad.addAll([Base])//cardboard,board,paper
 					Base.addExportFormat("stl")
 					Base.addExportFormat("svg")
