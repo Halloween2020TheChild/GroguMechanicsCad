@@ -217,7 +217,7 @@ CSG baseCore = new Cylinder(baseCorRad,baseCorRad,baseCoreheight-0.25,36).toCSG(
 //END Bearing Mount
 
 driveSide.setManufacturing({
-	it.rotx(-90).toZMin().rotz(-45)
+	it.rotx(-90).toZMin().rotz(-60)
 })
 baseCore.setManufacturing({
 	it.rotx(-90).toZMin()
