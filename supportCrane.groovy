@@ -141,15 +141,15 @@ return new ICadGenerator(){
 			public ArrayList<CSG> generateBody(MobileBase arg0) {
 				// TODO Auto-generated method stub
 				ArrayList<CSG> back =[]
-				back.add(new Cube(1).toCSG())
-				for(CSG c:back)
-					c.setManipulator(arg0.getRootListener())
-				for(DHParameterKinematics kin:arg0.getAllDHChains()) {
-					CSG limbRoot =new Cube(1).toCSG()
-					limbRoot.setManipulator(kin.getRootListener())
-					back.add(limbRoot)
-
-				}
+//				back.add(new Cube(1).toCSG())
+//				for(CSG c:back)
+//					c.setManipulator(arg0.getRootListener())
+//				for(DHParameterKinematics kin:arg0.getAllDHChains()) {
+//					CSG limbRoot =new Cube(1).toCSG()
+//					limbRoot.setManipulator(kin.getRootListener())
+//					back.add(limbRoot)
+//
+//				}
 				return back;
 			}
 
