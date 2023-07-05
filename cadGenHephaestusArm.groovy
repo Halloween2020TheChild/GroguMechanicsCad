@@ -205,16 +205,16 @@ return new ICadGenerator(){
 							.translateY(+20))
 
 					vitaminLocations.put(mountBoltOne,["capScrew", boltsize])
-					vitaminLocations.put(mountBoltOne.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength)),
+					vitaminLocations.put(mountBoltOne.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength+0.1)),
 							insert)
 					vitaminLocations.put(mountBoltTwo,["capScrew", boltsize])
-					vitaminLocations.put(mountBoltTwo.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength)),
+					vitaminLocations.put(mountBoltTwo.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength+0.1)),
 							insert)
 					vitaminLocations.put(springBolt,["capScrew", boltsize])
-					vitaminLocations.put(springBolt.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength)),
+					vitaminLocations.put(springBolt.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength+0.1)),
 							insert)
 					vitaminLocations.put(springBolt2,["capScrew", boltsize])
-					vitaminLocations.put(springBolt2.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength)),
+					vitaminLocations.put(springBolt2.times(new TransformNR().translateZ(-linkThickness-insertMeasurments.installLength+0.1)),
 							insert)
 				}
 				if(linkIndex==0) {
@@ -231,10 +231,10 @@ return new ICadGenerator(){
 							linkOneSupportWidth/2,
 							insertMeasurments.diameter/2+cornerRadius,new RotationNR(-90,0,0)))
 					vitaminLocations.put(mountBoltOne.times(new TransformNR().translateZ(5)),["capScrew", boltsize])
-					vitaminLocations.put(mountBoltOne.times(new TransformNR().translateZ(-insertMeasurments.installLength)),
+					vitaminLocations.put(mountBoltOne.times(new TransformNR().translateZ(-insertMeasurments.installLength+0.1)),
 							insert)
 					vitaminLocations.put(mountBoltTwo.times(new TransformNR().translateZ(5)),["capScrew", boltsize])
-					vitaminLocations.put(mountBoltTwo.times(new TransformNR().translateZ(-insertMeasurments.installLength)),
+					vitaminLocations.put(mountBoltTwo.times(new TransformNR().translateZ(-insertMeasurments.installLength+0.1)),
 							insert)
 				}
 
