@@ -47,34 +47,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.078</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>45.0</Delta>
@@ -103,34 +129,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.07200000000000001</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -159,34 +211,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -215,34 +293,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>100.0</Delta>
@@ -271,34 +375,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -327,34 +457,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>LewanSoulMotor</type>
 			<id>lx_224</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>58.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>LewanSoulHorn</type>
 			<id>round_m3_bolts</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>default</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>60.0</Delta>
@@ -403,34 +559,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>hobbyServo</type>
 			<id>standardMicro</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
 		</vitamin>
+
 		<vitamin>
 			<name>shaft</name>
 			<type>hobbyServoHorn</type>
 			<id>standardMicro1</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
 		</vitamin>
 
 	</vitamins>
 	<passive>false</passive>
 	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -442,16 +624,19 @@
 </link>
 
 <ZframeToRAS
->	<x>142.42599211715867</x>
+>
+	<x>142.42599211715867</x>
 	<y>0.1671251041179296</y>
 	<z>292.4260193472575</z>
 	<rotw>0.6525046856779598</rotw>
 	<rotx>0.2692962153504726</rotx>
 	<roty>0.27189906508114464</roty>
 	<rotz>0.6540551062213475</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
 	<x>0.0</x>
 	<y>-15.0</y>
 	<z>60.0</z>
@@ -459,6 +644,7 @@
 	<rotx>0.2705980500730985</rotx>
 	<roty>-0.6532814824378451</roty>
 	<rotz>-0.2705980500730985</rotz>
+
 </baseToZframe>
 
 </appendage>
@@ -492,34 +678,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>hobbyServo</type>
 			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+			<pose>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
+		</vitamin>
+
+		<vitamin>
+			<name>shaft</name>
+			<type>hobbyServoHorn</type>
+			<id>standardMicro1</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
+		</vitamin>
+
+	</vitamins>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -531,16 +743,19 @@
 </link>
 
 <ZframeToRAS
->	<x>142.42599211715867</x>
+>
+	<x>142.42599211715867</x>
 	<y>0.1671251041179296</y>
 	<z>292.4260193472575</z>
 	<rotw>0.6525046856779598</rotw>
 	<rotx>0.2692962153504726</rotx>
 	<roty>0.27189906508114464</roty>
 	<rotz>0.6540551062213475</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
 	<x>85.0</x>
 	<y>0.0</y>
 	<z>180.0</z>
@@ -548,6 +763,7 @@
 	<rotx>0.27059805007309845</rotx>
 	<roty>-0.6532814824381883</roty>
 	<rotz>-0.27059805007309856</rotz>
+
 </baseToZframe>
 
 </appendage>
@@ -581,34 +797,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>hobbyServo</type>
 			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+			<pose>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
+		</vitamin>
+
+		<vitamin>
+			<name>shaft</name>
+			<type>hobbyServoHorn</type>
+			<id>standardMicro1</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
+		</vitamin>
+
+	</vitamins>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -620,28 +862,7 @@
 </link>
 
 <ZframeToRAS
->	<x>142.42599211715867</x>
-	<y>0.1671251041179296</y>
-	<z>292.4260193472575</z>
-	<rotw>0.6525046856779598</rotw>
-	<rotx>0.2692962153504726</rotx>
-	<roty>0.27189906508114464</roty>
-	<rotz>0.6540551062213475</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>-85.0</x>
-	<y>0.0</y>
-	<z>180.0</z>
-	<rotw>0.6532814824381883</rotw>
-	<rotx>0.27059805007309845</rotx>
-	<roty>-0.6532814824381883</roty>
-	<rotz>-0.27059805007309856</rotz>
-</baseToZframe>
-
-</appendage>
-
-<ZframeToRAS>
+>
 	<x>142.42599211715867</x>
 	<y>0.1671251041179296</y>
 	<z>292.4260193472575</z>
@@ -649,9 +870,25 @@
 	<rotx>0.2692962153504726</rotx>
 	<roty>0.27189906508114464</roty>
 	<rotz>0.6540551062213475</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
+	<x>-85.0</x>
+	<y>0.0</y>
+	<z>180.0</z>
+	<rotw>0.6532814824381883</rotw>
+	<rotx>0.27059805007309845</rotx>
+	<roty>-0.6532814824381883</roty>
+	<rotz>-0.27059805007309856</rotz>
+
+</baseToZframe>
+
+</appendage>
+
+<ZframeToRAS>
+
 	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -659,26 +896,43 @@
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
+</ZframeToRAS>
+
+<baseToZframe>
+
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+
 </baseToZframe>
 	<mass>0.005</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
-<vitamins>
+	<vitamins>
 
-</vitamins>
+	</vitamins>
 
 </mobilebase>
 
@@ -687,16 +941,19 @@
 </link>
 
 <ZframeToRAS
->	<x>0.0</x>
+>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
 	<x>0.0</x>
 	<y>0.0</y>
 	<z>55.0</z>
@@ -704,6 +961,7 @@
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </baseToZframe>
 
 </appendage>
@@ -712,20 +970,6 @@
 <name>supportCrane</name>
 
 <parallelGroup>headGroup</parallelGroup>
-
-<parallelGroupTipOffset>
-	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz>
-	<relativeTo>Standard6dofArm1</relativeTo>
-
-	<relativeToLink>5</relativeToLink>
-
-</parallelGroupTipOffset>
 	<cadEngine>
 		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
 		<file>supportCrane.groovy</file>
@@ -753,34 +997,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>ballBearing</type>
 			<id>695zz</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>capScrew</type>
-			<id>M5</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+			<pose>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
+		</vitamin>
+
+		<vitamin>
+			<name>shaft</name>
+			<type>capScrew</type>
+			<id>M5</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
+		</vitamin>
+
+	</vitamins>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>250.0</Delta>
@@ -809,34 +1079,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>hobbyServo</type>
 			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+			<pose>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
+		</vitamin>
+
+		<vitamin>
+			<name>shaft</name>
+			<type>hobbyServoHorn</type>
+			<id>standardMicro1</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
+		</vitamin>
+
+	</vitamins>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -865,34 +1161,60 @@
 	<homingTPS>10000000</homingTPS>
 
 	<vitamins>
+
 		<vitamin>
 			<name>electroMechanical</name>
 			<type>hobbyServo</type>
 			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+			<pose>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>lastlink</frame>
+		</vitamin>
+
+		<vitamin>
+			<name>shaft</name>
+			<type>hobbyServoHorn</type>
+			<id>standardMicro1</id>
+			<pose>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+			</pose>
+			<frame>origin</frame>
+		</vitamin>
+
+	</vitamins>
+	<passive>false</passive>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>-0.0</rotx>
+	<roty>-0.0</roty>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
 	<DHParameters>
 		<Delta>0.0</Delta>
@@ -904,16 +1226,19 @@
 </link>
 
 <ZframeToRAS
->	<x>0.0</x>
+>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
 	<x>-100.0</x>
 	<y>0.0</y>
 	<z>55.0</z>
@@ -921,11 +1246,13 @@
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </baseToZframe>
 
 </appendage>
 
 <ZframeToRAS>
+
 	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -933,9 +1260,11 @@
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </ZframeToRAS>
 
 <baseToZframe>
+
 	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
@@ -943,26 +1272,31 @@
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
 	<rotz>-0.0</rotz>
+
 </baseToZframe>
 	<mass>0.025000000000000015</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
+	<centerOfMassFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
+	<rotz>-0.0</rotz>
+</centerOfMassFromCentroid>
+	<imuFromCentroid>
+	<x>0.0</x>
 	<y>0.0</y>
 	<z>0.0</z>
 	<rotw>1.0</rotw>
 	<rotx>-0.0</rotx>
 	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
+	<rotz>-0.0</rotz>
+</imuFromCentroid>
 
-<vitamins>
+	<vitamins>
 
-</vitamins>
+	</vitamins>
 
 </mobilebase>
 
