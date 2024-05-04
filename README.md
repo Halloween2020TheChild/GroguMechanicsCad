@@ -2,9 +2,6 @@
 
 This robot is for use in RBE 3001 as a teaching platform for robot kinematics and trajectory planning and image recognition. 
 
-<img src="photos/assembly.jpg" width="600">
-
-
 
 ## 1.1 READ THIS SECTION BEFORE YOU DO ANYTHING
 
@@ -59,7 +56,6 @@ The goal of this section is to give you an understanding of your kit and the par
 ## 2.1 RBE 3001 Main Kit
 
 
-<img src="photos/mainkit2.jpg" width="600">
 
 *Note the box in the image is not included get your own. 
 
@@ -90,7 +86,6 @@ The goal of this section is to give you an understanding of your kit and the par
 
 ### 3D Printed Parts
 
-<img src="photos/mainkit1.jpg" width="600">
 
 1) 1x - Base: The arm's base
 
@@ -117,7 +112,6 @@ The goal of this section is to give you an understanding of your kit and the par
 
 ## 2.2 RBE 3001 Camera Kit
 
-<img src="photos/camerakit.jpg" width="600">
 
 ## Camera Kit v2
 (Not the camera kit provided to students for A20)
