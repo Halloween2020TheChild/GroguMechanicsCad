@@ -65,6 +65,8 @@ Feel free to source these tools from wherever is nearby and cheap, this is just 
 
  1x - [5.5mm x 2.1mm DC Power Jack Connector](https://www.amazon.com/Chanzon-Female-Connector-Security-Adapter/dp/B079RCNNCK)
 
+ 1x - [B.E.C.](https://www.amazon.com/FainWan-Products-3amp-6-0-25-2v-Adjustable/dp/B09L6Z67Q8)
+
  3x - [Thrust Bearing](https://www.mcmaster.com/5909k41) : A ring of bearings for the base joint.
 
  6x - [Thrust Bearing Surface](https://www.mcmaster.com/5909K54-5909K54) : A metal ring to support the thrust bearing.
