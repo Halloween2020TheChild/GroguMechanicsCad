@@ -59,9 +59,11 @@ Feel free to source these tools from wherever is nearby and cheap, this is just 
 
 *Note the box in the image is not included get your own. 
 
- 6x - [Smart Servo Kit](https://www.amazon.com/dp/B081CTX6DM/ref=twister_B0817ZKWF9): Servo Motor that drives the main 3 joints of the arm,along with a cord and servo horns.
+ 6x - [Smart Servo Kit](https://www.hiwonder.com/products/htd-45h?variant=39969169440855): Servo Motor that drives the main 3 joints of the arm,along with a cord and servo horns.
 
  1x - [Power Supply](https://www.digikey.com/product-detail/en/mean-well-usa-inc/GST60A07-P1J/1866-2147-ND/7703710): Provides power to arm, via a DC jack.
+
+ 1x - [5.5mm x 2.1mm DC Power Jack Connector](https://www.amazon.com/Chanzon-Female-Connector-Security-Adapter/dp/B079RCNNCK)
 
  3x - [Thrust Bearing](https://www.mcmaster.com/5909k41) : A ring of bearings for the base joint.
 
