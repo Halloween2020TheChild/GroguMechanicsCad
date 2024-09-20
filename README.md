@@ -122,17 +122,17 @@ The goal of this section is to give you an understanding of your kit and the par
 
 This next step of instructions will guide you in assembeling the elctronics for the arm and then calibrating the servos.
 
-[Wire the electronics](solderElectronics.md)
+[Wire the electronics](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/solderElectronics.md)
 
 # 4 Build the arm
 
-[Build instructions](assembly.md)
+[Build instructions](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/assembly.md)
 
 # 5 Calibrating the arm
 
-![Calibration Pose](armCalibration.png) 
+![Calibration Pose](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/armCalibration.png) 
 
-![Calibration Pose](photos/calibrationPose.jpg) 
+![Calibration Pose](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/photos/calibrationPose.jpg) 
 
 From now on, all you need to do to calibrate the arm is move the robot to the calibrate pose and hit the calibration button on the breadboard. **You will need to  calibrate the robot every time the ItsyBitsy is power cycled.** 
 
@@ -144,7 +144,7 @@ From now on, all you need to do to calibrate the arm is move the robot to the ca
 
 ## 7.1 Communication
 
-[Communication Protocol](protocol.md)
+[Communication Protocol](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/protocol.md)
 
 ## 7.2 CAD and simulation
 
