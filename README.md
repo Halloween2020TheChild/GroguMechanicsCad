@@ -51,9 +51,9 @@ Feel free to source these tools from wherever is nearby and cheap, this is just 
 
 # 2 Unboxing and Understanding Your Kit. 
 
-The goal of this section is to give you an understanding of your kit and the parts in it. This section assumes you have purchased the [RBE 3001 Main kit](https://wpi.bncollege.com/shop/BNCB_TextbookDetailView?displayStoreId=32554&urlRequestType=Base&catalogId=10001&productId=650018123743&langId=-1&partNumber=98_844003009&storeId=32554&sectionId=97501637&item=N) and the [RBE 3001 Camera kit](https://wpi.bncollege.com/shop/BNCB_TextbookDetailView?displayStoreId=32554&urlRequestType=Base&catalogId=10001&productId=650018123744&langId=-1&partNumber=98_844003010&storeId=32554&sectionId=97501637&item=N).
 
-## 2.1 RBE 3001 Main Kit
+
+## 2.1 Hephaestus v3 Main Kit
 
 
 
@@ -63,9 +63,9 @@ The goal of this section is to give you an understanding of your kit and the par
 
  1x - [Power Supply](https://www.digikey.com/product-detail/en/mean-well-usa-inc/GST60A07-P1J/1866-2147-ND/7703710): Provides power to arm, via a DC jack.
 
- 2x - [Thrust Bearing](https://www.mcmaster.com/5909k41) : A ring of bearings for the base joint.
+ 3x - [Thrust Bearing](https://www.mcmaster.com/5909k41) : A ring of bearings for the base joint.
 
- 4x - [Thrust Bearing Surface](https://www.mcmaster.com/5909K54-5909K54) : A metal ring to support the thrust bearing.
+ 6x - [Thrust Bearing Surface](https://www.mcmaster.com/5909K54-5909K54) : A metal ring to support the thrust bearing.
 
  40x - [Heat-Set Inserts](https://www.mcmaster.com/94180a361) : Threaded inserts for the 3D printed parts (sold in packs of 50).
 
@@ -107,16 +107,8 @@ The goal of this section is to give you an understanding of your kit and the par
 
 10) 1x - 3 Hole Bar: A bar with three holes for holding a servo
 
-11) 5x - Orb: Pink, yellow, purple, green, and black colored orbs
-
 
 ## 2.2 RBE 3001 Camera Kit
-
-
-## Camera Kit v2
-(Not the camera kit provided to students for A20)
-
-1) 1x [Camera](http://www.webcamerausb.com/elp-usb-security-camera-low-light-1080p-sony-imx322-hd-sensor-h264-voice-recording-pinhole-spy-camera-for-video-conference-p-236.html) 
 
 # 3 Build the electronics
 
