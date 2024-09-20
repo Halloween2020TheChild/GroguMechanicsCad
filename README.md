@@ -108,13 +108,11 @@ Feel free to source these tools from wherever is nearby and cheap, this is just 
 10) 1x - 3 Hole Bar: A bar with three holes for holding a servo
 
 
-## 2.2 RBE 3001 Camera Kit
-
 # 3 Build the electronics
 
 This next step of instructions will guide you in assembeling the elctronics for the arm and then calibrating the servos.
 
-[Wire the electronics](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/solderElectronics.md)
+[Wire the electronics](https://github.com/Halloween2020TheChild/SixDofFirmwareESP)
 
 # 4 Build the arm
 
@@ -122,15 +120,9 @@ This next step of instructions will guide you in assembeling the elctronics for 
 
 # 5 Calibrating the arm
 
-![Calibration Pose](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/armCalibration.png) 
+Calibrate the arme once and only once on assembly
 
-![Calibration Pose](https://github.com/Hephaestus-Arm/HephaestusArm2/blob/main/photos/calibrationPose.jpg) 
 
-From now on, all you need to do to calibrate the arm is move the robot to the calibrate pose and hit the calibration button on the breadboard. **You will need to  calibrate the robot every time the ItsyBitsy is power cycled.** 
-
-## 6 Matlab Setup
-
-[Setup Matlab and begin working](https://github.com/Hephaestus-Arm/RBE3001_Matlab)
 
 # 7 Extras
 
